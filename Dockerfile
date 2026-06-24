@@ -12,4 +12,4 @@ COPY fonts /usr/share/nginx/html/fonts
 EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s \
-  CMD wget -qO- http://localhost/ >/dev/null 2>&1 || exit 1
+  CMD wget --spider -q http://127.0.0.1:80/ || exit 1
