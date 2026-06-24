@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardomancer — Deal Your Fate</title>
+  <meta name="description" content="A strategic roguelike deckbuilder. 52 cards. One living grid. Three cardomancers who rewrite the future. Pre-register free.">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cardomancer — Deal Your Fate">
+  <meta property="og:description" content="A strategic roguelike deckbuilder. 52 cards. One living grid. Three cardomancers who rewrite the future.">
+  <meta property="og:url" content="https://cardomancer.app">
+  <meta property="og:image" content="./assets/gameplay-board.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#d71921">
+
+  <!-- inline favicon (card mark) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23D71921'/%3E%3Crect x='38' y='28' width='24' height='36' rx='3' fill='%23fff'/%3E%3Ctext x='50' y='51' font-family='monospace' font-size='20' font-weight='800' fill='%23D71921' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav">
+    <a href="https://cardomancer.app" aria-label="Cardomancer home">
+      <img class="nav__logo" src="./assets/logo-white.png" alt="Cardomancer">
+    </a>
+    <nav class="nav__links">
+      <a class="nav__link" href="#game">THE GAME</a>
+      <a class="nav__link" href="#cardomancers">CARDOMANCERS</a>
+      <a class="nav__link" href="#houses">HOUSES</a>
+      <a class="nav__link" href="#world">WORLD</a>
+      <a class="btn btn--dark btn--sm" href="https://cardomancer.app">PRE-REGISTER</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="hero__copy">
+        <span class="hero__eyebrow">EARLY ACCESS · KINGDOM OF VELM</span>
+        <h1 class="hero__title">DEAL<br>YOUR<br>FATE</h1>
+        <p class="hero__lede">A strategic roguelike deckbuilder. 52 cards. One living grid. Three cardomancers who rewrite the future.</p>
+        <div class="hero__actions">
+          <a class="btn btn--dark btn--lg" href="https://cardomancer.app"><span class="btn__dot"></span>PRE-REGISTER FREE</a>
+          <span class="hero__count">128,400 ENLISTED</span>
+        </div>
+      </div>
+
+      <div class="hero__stage" id="game">
+        <div class="cardframe cardframe--l">
+          <video src="./assets/taren-battle.webm" autoplay loop muted playsinline style="height:392px;"></video>
+          <canvas data-chroma width="440" height="784" style="width:220px; height:392px;"></canvas>
+        </div>
+        <div class="cardframe cardframe--r">
+          <video src="./assets/kai-battle.webm" autoplay loop muted playsinline style="height:396px;"></video>
+          <canvas data-chroma width="444" height="792" style="width:222px; height:396px;"></canvas>
+        </div>
+        <div class="cardframe cardframe--c">
+          <video src="./assets/lira-battle.webm" autoplay loop muted playsinline style="height:448px;"></video>
+          <canvas data-chroma width="504" height="896" style="width:252px; height:448px;"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PITCH ============================== -->
+    <section class="section pitch">
+      <h2 class="pitch__head">REWRITE THE FUTURE — ONE CARD AT A TIME.</h2>
+      <div class="pitch__body">
+        <div class="dotrule"></div>
+        <p class="pitch__text">Lay a 52-card deck across a living 5×5 to 7×7 grid. Poker-rank combos are moments where you compose a stronger future than your rival — and it comes true first. Bouts last 5–15 minutes. Every run rewrites Elythar.</p>
+      </div>
+    </section>
+
+    <!-- ============================== GAMEPLAY ============================== -->
+    <section class="section">
+      <div class="gameplay">
+        <div class="gameplay__copy">
+          <p class="eyebrow">REAL-TIME BOARD DUELS</p>
+          <h2 class="gameplay__title">THE GRID IS<br>THE BATTLEFIELD.</h2>
+          <p class="gameplay__text">Read your opponent, place your hand, and watch poker-rank combos resolve in real time. Position is power — where a card lands matters as much as what it is.</p>
+          <div class="stats">
+            <div><div class="stat__num">5–15</div><div class="stat__label">MIN PER BOUT</div></div>
+            <div><div class="stat__num">7×7</div><div class="stat__label">MAX GRID</div></div>
+          </div>
+        </div>
+        <div class="gameplay__shot">
+          <img src="./assets/gameplay-board.png" alt="Cardomancer gameplay board" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ASPECTS ============================== -->
+    <section class="section">
+      <p class="eyebrow">ASPECTS OF FATE</p>
+      <div class="grid grid--4">
+        <div class="aspect">
+          <img src="./assets/suits/heart-red.svg" alt="Hearts">
+          <div class="aspect__name">HEARTS · HEAL</div>
+          <div class="aspect__desc">Rewrite the wound — pull allies back from the edge of fate.</div>
+        </div>
+        <div class="aspect">
+          <img src="./assets/suits/diamond-red.svg" alt="Diamonds" style="width:30px;">
+          <div class="aspect__name">DIAMONDS · GUARD</div>
+          <div class="aspect__desc">Turn aside ill fate — shield your thread from harm.</div>
+        </div>
+        <div class="aspect">
+          <img src="./assets/suits/spade-black.svg" alt="Spades" style="width:28px;">
+          <div class="aspect__name">SPADES · HIDE</div>
+          <div class="aspect__desc">Erase your thread — vanish from the eyes of fate.</div>
+        </div>
+        <div class="aspect">
+          <img src="./assets/suits/club-black.svg" alt="Clubs" style="width:30px;">
+          <div class="aspect__name">CLUBS · RIFT</div>
+          <div class="aspect__desc">Break fate by force — the forbidden Rift magic.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CARDOMANCERS ============================== -->
+    <section class="section" id="cardomancers">
+      <p class="eyebrow">CHOOSE YOUR CARDOMANCER</p>
+      <div class="grid grid--3">
+        <button class="hero-card" type="button" data-hero="lira">
+          <div class="hero-card__art hero-card__art--lira"><img src="./assets/lira.png" alt="Lira"></div>
+          <div class="hero-card__meta">
+            <div><div class="hero-card__name">LIRA</div><div class="hero-card__line" style="color:#E85A7A;">HEARTS · THE HEALER'S LINE</div></div>
+            <img src="./assets/suits/heart-red.svg" alt="">
+          </div>
+        </button>
+        <button class="hero-card" type="button" data-hero="kai">
+          <div class="hero-card__art hero-card__art--kai"><img src="./assets/kai.png" alt="Kai"></div>
+          <div class="hero-card__meta">
+            <div><div class="hero-card__name">KAI</div><div class="hero-card__line" style="color:#E8C36B;">DIAMONDS · THE NOT-CHOSEN</div></div>
+            <img src="./assets/suits/diamond-red.svg" alt="" style="width:20px;">
+          </div>
+        </button>
+        <button class="hero-card" type="button" data-hero="taren">
+          <div class="hero-card__art hero-card__art--taren"><img src="./assets/taren.png" alt="Taren"></div>
+          <div class="hero-card__meta">
+            <div><div class="hero-card__name">TAREN</div><div class="hero-card__line" style="color:#b39bff;">SPADES · THE UNSEEN</div></div>
+            <img src="./assets/suits/spade-white.svg" alt="" style="width:20px;">
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================== HOUSES ============================== -->
+    <section class="section" id="houses">
+      <p class="eyebrow">FOUR HOUSES OF ELYTHAR</p>
+      <div class="grid grid--4">
+        <div class="house"><img src="./assets/crest-drakmor.jpg" alt="Drakmor crest" loading="lazy"><div class="house__name">DRAKMOR</div></div>
+        <div class="house"><img src="./assets/crest-velara.jpg" alt="Velara crest" loading="lazy"><div class="house__name">VELARA</div></div>
+        <div class="house"><img src="./assets/crest-noxmoor.jpg" alt="Noxmoor crest" loading="lazy"><div class="house__name">NOXMOOR</div></div>
+        <div class="house"><img src="./assets/crest-thornwall.jpg" alt="Thornwall crest" loading="lazy"><div class="house__name">THORNWALL</div></div>
+      </div>
+    </section>
+
+    <!-- ============================== BOSS / WORLD ============================== -->
+    <section class="section" id="world">
+      <div class="boss">
+        <img src="./assets/boss-wolf.png" alt="Emerald Clubs boss" loading="lazy">
+        <div class="boss__copy">
+          <div class="boss__eyebrow">200 YEARS AFTER THE WAR OF THE RIFT</div>
+          <h2 class="boss__title">THE RIFT<br>RETURNS</h2>
+          <p class="boss__text">Emerald Clubs magic stirs in the forests of Elythar. Face the boss who threatens to repeat history.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FINAL CTA ============================== -->
+    <section class="cta">
+      <img class="cta__logo" src="./assets/logo-white.png" alt="Cardomancer">
+      <h2 class="cta__title">THE DECK IS WAITING</h2>
+      <p class="cta__text">Every card is a choice. Every choice — your fate.</p>
+      <div class="stores">
+        <a class="store" href="https://cardomancer.app">
+          <svg width="18" height="20" viewBox="0 0 384 512" fill="#fff"><path d="M318.7 268c-.5-58 47.4-85.8 49.5-87.2-27-39.5-69-44.9-83.9-45.5-35.7-3.6-69.7 21-87.8 21-18 0-46-20.5-75.6-19.9-38.9.6-74.8 22.6-94.8 57.4-40.4 70-10.3 173.7 29 230.6 19.2 27.9 42.1 59.2 72.1 58.1 28.9-1.1 39.9-18.7 74.9-18.7s44.8 18.7 75.6 18.1c31.2-.5 50.9-28.4 70-56.4 22.1-32.2 31.2-63.4 31.6-65-.7-.3-60.6-23.2-61.1-92zM261.8 83.3c15.9-19.3 26.6-46.1 23.7-72.8-22.9.9-50.6 15.3-67 34.6-14.7 17.1-27.6 44.4-24.2 70.6 25.6 2 51.7-13 67.5-32.4z"/></svg>
+          <div style="text-align:left;"><div class="store__top">COMING SOON TO</div><div class="store__name">APP STORE</div></div>
+        </a>
+        <a class="store" href="https://cardomancer.app">
+          <svg width="17" height="19" viewBox="0 0 512 512" fill="#fff"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z"/></svg>
+          <div style="text-align:left;"><div class="store__top">COMING SOON TO</div><div class="store__name">GOOGLE PLAY</div></div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>ONEELVEN STUDIOS · CARDOMANCER · © 2026</span>
+      <span>KINGDOM OF VELM · ACADEMY ELYTHAR</span>
+    </footer>
+
+  </div><!-- /wrap -->
+
+  <!-- ============================== HERO MODAL ============================== -->
+  <div class="modal" id="heroModal" hidden>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="heroModalName">
+      <div class="modal__stage">
+        <video id="heroModalVideo" autoplay loop muted playsinline></video>
+        <canvas id="heroModalCanvas" data-chroma width="206" height="366"></canvas>
+        <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__name" id="heroModalName"></div>
+        <div class="modal__suit" id="heroModalSuit"></div>
+        <p class="modal__bio" id="heroModalBio"></p>
+        <a class="btn btn--red modal__cta" href="https://cardomancer.app">PRE-REGISTER TO PLAY</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
